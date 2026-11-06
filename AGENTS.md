@@ -53,6 +53,9 @@ This file serves as the definitive reference manual and operational standard for
 7. **Reports & Publications: LaTeX for PDF Deliverables**:
    - Use **LaTeX** (`pdflatex` / `xelatex` / `latexmk`) for all formal technical reports, white papers, conference submissions, and PDF deliverables.
    - Maintain LaTeX source code and figure assets cleanly in a `report/` or `docs/` subfolder.
+   - **Mandatory Executive Summary**: Major technical and evaluation reports should feature a structured, stand-alone Executive Summary (approx. 1 page) placed immediately after the Abstract, highlighting primary findings, quantitative metrics, and operational recommendations.
+   - **AI Transparency & Authorship Disclosure**: Any manuscript or report prepared with generative AI assistance **MUST** include a formal `Declaration of Generative AI and AI-Assisted Technologies in the Scientific Process` section placed immediately before the references/bibliography, complying with international journal publishing guidelines (COPE, Elsevier, Nature Portfolio). Detail the specific tools used, workflows assisted, and confirm human author accountability.
+   - **Zero-Warning Margin Standard**: PDF builds must be checked for overfull `\hbox` warnings protruding into margins. Wide multi-column tables must utilize `\footnotesize`, tuned `\tabcolsep`, or wrapped paragraph columns (`p{...}`).
 
 ---
 
@@ -176,9 +179,10 @@ This file serves as the definitive reference manual and operational standard for
 ## 6. Specialized Domain Skills Repository
 
 Curated domain skills and standardized methodologies are maintained in `/home/nilsmk/git/skillcollection/`. Refer to and adopt these specifications for relevant tasks:
-- **`roms-ocean-eval`** ([SKILLS_roms_ocean_eval.md](/home/nilsmk/git/skillcollection/SKILLS_roms_ocean_eval.md)): ROMS model verification, CPP options, non-linear tide-surge interaction diagnostics ($\zeta_{\text{int}}$), and `utide` harmonic analysis.
-- **`kartverket-tide-api`** ([SKILLS_kartverket_tide_api.md](/home/nilsmk/git/skillcollection/SKILLS_kartverket_tide_api.md)): Norwegian Mapping Authority water level and tide API client specifications, unit conversions (cm to m), and caching.
-- **`scientific-latex-report`** ([SKILLS_scientific_latex_report.md](/home/nilsmk/git/skillcollection/SKILLS_scientific_latex_report.md)): Standard scientific LaTeX templates, `booktabs` typography, and two-pass non-interactive PDF build scripts.
+- **`roms-ocean-eval`** ([SKILLS_roms_ocean_eval.md](/home/nilsmk/git/skillcollection/SKILLS_roms_ocean_eval.md)): ROMS model verification, CPP options, non-linear tide-surge interaction diagnostics ($\zeta_{\text{int}}$), `utide` harmonic analysis, total tidal error vectors ($D_{\mathrm{total}}, D_4$), 1D circular phasors vs 2D current ellipses, and Inverse Barometer (IB) domain-scale under-response dynamics and blending.
+- **`kartverket-tide-api`** ([SKILLS_kartverket_tide_api.md](/home/nilsmk/git/skillcollection/SKILLS_kartverket_tide_api.md)): Norwegian Mapping Authority water level and tide API client specifications, unit conversions (cm to m), multi-year timeseries ingestion, station availability, and caching.
+- **`scientific-latex-report`** ([SKILLS_scientific_latex_report.md](/home/nilsmk/git/skillcollection/SKILLS_scientific_latex_report.md)): Standard scientific LaTeX templates, `booktabs` typography, 1-page executive summaries, AI transparency disclosures, margin-safe table layout, and two-pass non-interactive PDF build scripts.
+- **`agentic-coding-optimizer`** ([SKILLS_agentic_coding_optimizer.md](/home/nilsmk/git/skillcollection/SKILLS_agentic_coding_optimizer.md)): Token budget management, context compaction strategies, caching optimization, and autonomous agent engineering workflows.
 - **`grib-netcdf-wrangler`** ([SKILLS_grib_netcdf_wrangler.md](/home/nilsmk/git/skillcollection/SKILLS_grib_netcdf_wrangler.md)): High-performance NetCDF/GRIB handling, Lustre storage locking workarounds, memory-safe hyperslabs, and grid coordinate rotations.
 - **`sailing-polar-telemetry`** ([SKILLS_sailing_polar_telemetry.md](/home/nilsmk/git/skillcollection/SKILLS_sailing_polar_telemetry.md)): ORC polar parsing, 2D SciPy polar interpolations, VMG, tacking loss metrics, and Dash-Plotly dashboard conventions.
 - **`klarsprak-norsk`** ([SKILLS_klarspraak_norsk.md](/home/nilsmk/git/skillcollection/SKILLS_klarspraak_norsk.md)): Norwegian plain language standards (*Språklova* § 9, ISO 24495-1).
@@ -209,6 +213,8 @@ After completing any code changes, verify each item before returning control to 
 - [ ] Any calculation scripts in `AI_calculations/` pass static checks and tests.
 - [ ] All unit tests pass (`pytest`).
 - [ ] Generated figures are correctly named (`{script_idx}p{plot_idx}_{descriptive_name}.png`) and saved at 300 dpi; headless execution verified.
+- [ ] LaTeX documents compile cleanly with zero fatal errors and zero overfull \hbox margin warnings.
+- [ ] Reports prepared with generative AI include a formal Generative AI transparency disclosure section.
 - [ ] Relevant documentation files (`README.md`, `DOCUMENTATION.md`, `HISTORY.md`) are kept up to date.
 - [ ] `DISCUSSIONS_LOG.md` is updated with a concise record of the interaction.
 - [ ] `AI_REASONING.md` is updated if new non-trivial mathematical formulations or algorithmic decisions were reached.

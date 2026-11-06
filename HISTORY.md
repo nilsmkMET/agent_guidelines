@@ -1,5 +1,17 @@
 # HISTORY.md — Session History & Audit Trail
 
+## 2026-11-06 — Publishing, AI Transparency, and Tidal/Residual Modeling Enhancements
+
+- **Execution Environment**: Linux VM, Conda environment `roms_tide_optimizer` (Python 3.11.15).
+- **Primary Objectives**:
+  1. Review and update `AGENTS.md` and domain skills in `/home/nilsmk/git/skillcollection/`.
+  2. Embed operational lessons learned from 14,376-hour NorKyst-800m ROMS evaluation against Kartverket tide gauges.
+- **Key Updates to AGENTS.md**:
+  - Added requirement for a 1-page stand-alone **Executive Summary** in all major evaluation and validation reports.
+  - Added mandatory **Declaration of Generative AI and AI-Assisted Technologies in the Scientific Process** conforming to COPE/Elsevier/Nature standards.
+  - Added zero overfull `\hbox` margin standards to pre-response quality checklists.
+  - Linked updated domain skills (`roms-ocean-eval`, `kartverket-tide-api`, `scientific-latex-report`, `agentic-coding-optimizer`).
+
 ## 2026-10-26 — Master AGENTS.md Harmonization
 
 - **Execution Environment**: Headless Linux development environment (`/home/nilsmk/git`).

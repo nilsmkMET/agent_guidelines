@@ -1,5 +1,12 @@
 # DISCUSSIONS_LOG.md — Interaction Log
 
+## 2026-11-06 — Update AGENTS.md and domain skills from NorKyst tidal/surge evaluation
+**Prompt:** Review AGENTS file in ../agent_instructions and skills in ../skillcollection, and make updates based on work done.
+**Actions:**
+- Updated `AGENTS.md` with mandatory stand-alone 1-page Executive Summaries, formal Generative AI transparency disclosures (COPE/Elsevier/Nature standards), zero overfull `\hbox` margin standards, and cross-references to expanded skills.
+- Synchronized checklists and pre-response quality protocols.
+**Outcome:** Global agent instructions updated with publishing and technical reporting standards derived from NorKyst-800m operational evaluation.
+
 ## 2026-10-26 — Consolidate master AGENTS.md guidelines
 **Prompt:** Merge content from baseline guideline templates and existing project AGENTS.md files across ~/git/ into master AGENTS.md, preserving existing rules and following all operational standards.
 **Actions:**
