@@ -1,5 +1,13 @@
 # DISCUSSIONS_LOG.md — Interaction Log
 
+## 2026-11-17 — Remove deprecated guideline template from git history
+**Prompt:** Update git history of repository to remove references to deprecated guideline template.
+**Actions:**
+- Rewrote commit history to completely purge the deprecated guideline template file from commit trees.
+- Sanitized historical mentions in `HISTORY.md` and `DISCUSSIONS_LOG.md` within rewritten commits to replace references with generic baseline guideline templates.
+- Expired reflogs and pruned unreachable objects.
+**Outcome:** Repository history sanitized with zero references to the deleted file across all commit trees and audit records.
+
 ## 2026-11-06 — Update AGENTS.md and domain skills from NorKyst tidal/surge evaluation
 **Prompt:** Review AGENTS file in ../agent_instructions and skills in ../skillcollection, and make updates based on work done.
 **Actions:**

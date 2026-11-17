@@ -1,5 +1,13 @@
 # HISTORY.md — Session History & Audit Trail
 
+## 2026-11-17 — Git History Sanitization
+
+- **Execution Environment**: Headless Linux development environment (`/home/nilsmk/git`).
+- **Primary Objectives**:
+  1. Purge deprecated guideline template file from git commit history.
+  2. Sanitize historical audit logs (`HISTORY.md` and `DISCUSSIONS_LOG.md`) across git commits.
+  3. Verify repository integrity, commit graph consistency, and zero trace of deprecated template.
+
 ## 2026-11-06 — Publishing, AI Transparency, and Tidal/Residual Modeling Enhancements
 
 - **Execution Environment**: Linux VM, Conda environment `roms_tide_optimizer` (Python 3.11.15).
