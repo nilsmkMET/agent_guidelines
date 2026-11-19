@@ -1,5 +1,13 @@
 # DISCUSSIONS_LOG.md — Interaction Log
 
+## 2026-11-19 — Link skillcollection repository in documentation
+**Prompt:** Add a link to the `skillcollection` repository (`https://github.com/nilsmkMET/skillcollection`) to the documentation in this repo.
+**Actions:**
+- Added a **Related Repositories** section in `README.md` linking to `https://github.com/nilsmkMET/skillcollection`.
+- Added the GitHub repository link to Section 6 (**Specialized Domain Skills Repository**) in `AGENTS.md` alongside the local path.
+- Updated `HISTORY.md` and `DISCUSSIONS_LOG.md`.
+**Outcome:** Repository documentation now links directly to `https://github.com/nilsmkMET/skillcollection`.
+
 ## 2026-11-17 — Remove deprecated guideline template from git history
 **Prompt:** Update git history of repository to remove references to deprecated guideline template.
 **Actions:**

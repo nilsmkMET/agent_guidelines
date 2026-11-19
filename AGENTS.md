@@ -178,7 +178,7 @@ This file serves as the definitive reference manual and operational standard for
 
 ## 6. Specialized Domain Skills Repository
 
-Curated domain skills and standardized methodologies are maintained in `/home/nilsmk/git/skillcollection/`. Refer to and adopt these specifications for relevant tasks:
+Curated domain skills and standardized methodologies are maintained in [nilsmkMET/skillcollection](https://github.com/nilsmkMET/skillcollection) (local clone: `/home/nilsmk/git/skillcollection/`). Refer to and adopt these specifications for relevant tasks:
 - **`roms-ocean-eval`** ([SKILLS_roms_ocean_eval.md](/home/nilsmk/git/skillcollection/SKILLS_roms_ocean_eval.md)): ROMS model verification, CPP options, non-linear tide-surge interaction diagnostics ($\zeta_{\text{int}}$), `utide` harmonic analysis, total tidal error vectors ($D_{\mathrm{total}}, D_4$), 1D circular phasors vs 2D current ellipses, and Inverse Barometer (IB) domain-scale under-response dynamics and blending.
 - **`kartverket-tide-api`** ([SKILLS_kartverket_tide_api.md](/home/nilsmk/git/skillcollection/SKILLS_kartverket_tide_api.md)): Norwegian Mapping Authority water level and tide API client specifications, unit conversions (cm to m), multi-year timeseries ingestion, station availability, and caching.
 - **`scientific-latex-report`** ([SKILLS_scientific_latex_report.md](/home/nilsmk/git/skillcollection/SKILLS_scientific_latex_report.md)): Standard scientific LaTeX templates, `booktabs` typography, 1-page executive summaries, AI transparency disclosures, margin-safe table layout, and two-pass non-interactive PDF build scripts.

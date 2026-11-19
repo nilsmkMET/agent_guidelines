@@ -1,5 +1,11 @@
 # HISTORY.md — Session History & Audit Trail
 
+## 2026-11-19 — Link skillcollection Repository in Documentation
+
+- **Execution Environment**: Headless Linux development environment (`/home/nilsmk/git/agent_guidelines`).
+- **Primary Objectives**:
+  1. Add a link to the `skillcollection` GitHub repository (`https://github.com/nilsmkMET/skillcollection`) in the repository documentation (`README.md` and `AGENTS.md`).
+
 ## 2026-11-17 — Git History Sanitization
 
 - **Execution Environment**: Headless Linux development environment (`/home/nilsmk/git`).

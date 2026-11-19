@@ -54,3 +54,9 @@ When opening a specific repository or umbrella directory as the VS Code workspac
 
 - [AGENTS.md](./AGENTS.md): Complete engineering guidelines, standards for package management (`mamba`), code quality (`ruff`, `mypy`), git conventions (`main` branch), documentation, Lustre locking workarounds, and domain skills.
 - [README.md](./README.md): This guide explaining how and where to configure the instructions so they are always active.
+
+---
+
+## Related Repositories
+
+- [skillcollection](https://github.com/nilsmkMET/skillcollection): Curated domain skills and standardized methodologies referenced by `AGENTS.md`.
