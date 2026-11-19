@@ -1,5 +1,13 @@
 # DISCUSSIONS_LOG.md — Interaction Log
 
+## 2026-11-19 — Anonymize personal details in repository files
+**Prompt:** Review `skillcollection` and `agent_guidelines` for personal details and anonymize them while keeping public git links intact.
+**Actions:**
+- Verified `skillcollection` files contain no personal names, emails, or local home paths.
+- Removed personal name references and generalized local home directory paths and internal Lustre mount names to `~/git/` and `/lustre/<archive>/...` across `AGENTS.md`, `README.md`, `HISTORY.md`, and `DISCUSSIONS_LOG.md`.
+- Preserved public GitHub links to `nilsmkMET/skillcollection` and `nilsmkMET/agent_guidelines`.
+**Outcome:** All tracked files in both repositories are free of personal names, local home paths, and internal storage mount names.
+
 ## 2026-11-19 — Link skillcollection repository in documentation
 **Prompt:** Add a link to the `skillcollection` repository (`https://github.com/nilsmkMET/skillcollection`) to the documentation in this repo.
 **Actions:**
@@ -27,7 +35,7 @@
 **Prompt:** Merge content from baseline guideline templates and existing project AGENTS.md files across ~/git/ into master AGENTS.md, preserving existing rules and following all operational standards.
 **Actions:**
 - Analyzed and compared `agent_guidelines/AGENTS.md` against baseline guideline templates and repository-specific AGENTS.md files (`DumbSail`, `routing`, `hindcast_eval`, `oddfjell`, `new_barents`, `roms2way`, `inverse_tides`).
-- Identified and reconciled key divergence points (git policy: Nils maintains active version control with `main` branch convention; external templates restrict agent git commands).
+- Identified and reconciled key divergence points (git policy: repository owner maintains active version control with `main` branch convention; external templates restrict agent git commands).
 - Incorporated all non-contradictory engineering principles, AI reasoning standards, defensive programming conventions, logging and file-naming rules, session checklists, and sub-agent cost controls into `agent_guidelines/AGENTS.md`.
 - Documented findings and established this discussion log.
 **Outcome:** Master `AGENTS.md` updated with comprehensive guidelines, fully consistent across repositories.

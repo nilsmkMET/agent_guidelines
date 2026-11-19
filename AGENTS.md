@@ -1,6 +1,6 @@
-# AGENTS.md — Global Engineering & Agent Guidelines for Nils M. K.
+# AGENTS.md — Global Engineering & Agent Guidelines
 
-This file serves as the definitive reference manual and operational standard for all AI agents working across projects and repositories in `/home/nilsmk/git/`. Every agent session must adhere to these directives.
+This file serves as the definitive reference manual and operational standard for all AI agents working across projects and repositories in `~/git/`. Every agent session must adhere to these directives.
 
 ---
 
@@ -22,7 +22,7 @@ This file serves as the definitive reference manual and operational standard for
    - All scripts in `AI_calculations/` must follow the same coding guidelines as production code (linting, docstrings, type annotations).
 
 3. **Code Reuse ("Old Code First")**:
-   - Before building new algorithms, utilities, or workflows, inspect related repositories in `/home/nilsmk/git/` (e.g., oceanographic routines in `hindcast_eval`, `inverse_tides`, `bias_correction_2026`, `roms_tools_in_python`, sailing analytics in `routing`, `DumbSail`, text standards in `skillcollection`).
+   - Before building new algorithms, utilities, or workflows, inspect related repositories in `~/git/` (e.g., oceanographic routines in `hindcast_eval`, `inverse_tides`, `bias_correction_2026`, `roms_tools_in_python`, sailing analytics in `routing`, `DumbSail`, text standards in `skillcollection`).
    - Reuse existing, proven modules, helper functions, and coordinate/data transforms whenever available to prevent redundant reinvention.
 
 4. **Documentation & Interactive Notebooks (`ipynb`)**:
@@ -110,7 +110,7 @@ This file serves as the definitive reference manual and operational standard for
 ## 3. HPC, Data Storage & Oceanographic Domain Protocols
 
 - **Lustre Storage File Locking**:
-  - When accessing read-only Lustre mount points (such as `/lustre/storeB/...`) with NetCDF4, HDF5, or `xarray`, always ensure file locking is disabled:
+  - When accessing read-only Lustre mount points (such as `/lustre/<archive>/...`) with NetCDF4, HDF5, or `xarray`, always ensure file locking is disabled:
     ```bash
     export HDF5_USE_FILE_LOCKING=FALSE
     ```
@@ -178,16 +178,16 @@ This file serves as the definitive reference manual and operational standard for
 
 ## 6. Specialized Domain Skills Repository
 
-Curated domain skills and standardized methodologies are maintained in [nilsmkMET/skillcollection](https://github.com/nilsmkMET/skillcollection) (local clone: `/home/nilsmk/git/skillcollection/`). Refer to and adopt these specifications for relevant tasks:
-- **`roms-ocean-eval`** ([SKILLS_roms_ocean_eval.md](/home/nilsmk/git/skillcollection/SKILLS_roms_ocean_eval.md)): ROMS model verification, CPP options, non-linear tide-surge interaction diagnostics ($\zeta_{\text{int}}$), `utide` harmonic analysis, total tidal error vectors ($D_{\mathrm{total}}, D_4$), 1D circular phasors vs 2D current ellipses, and Inverse Barometer (IB) domain-scale under-response dynamics and blending.
-- **`kartverket-tide-api`** ([SKILLS_kartverket_tide_api.md](/home/nilsmk/git/skillcollection/SKILLS_kartverket_tide_api.md)): Norwegian Mapping Authority water level and tide API client specifications, unit conversions (cm to m), multi-year timeseries ingestion, station availability, and caching.
-- **`scientific-latex-report`** ([SKILLS_scientific_latex_report.md](/home/nilsmk/git/skillcollection/SKILLS_scientific_latex_report.md)): Standard scientific LaTeX templates, `booktabs` typography, 1-page executive summaries, AI transparency disclosures, margin-safe table layout, and two-pass non-interactive PDF build scripts.
-- **`agentic-coding-optimizer`** ([SKILLS_agentic_coding_optimizer.md](/home/nilsmk/git/skillcollection/SKILLS_agentic_coding_optimizer.md)): Token budget management, context compaction strategies, caching optimization, and autonomous agent engineering workflows.
-- **`grib-netcdf-wrangler`** ([SKILLS_grib_netcdf_wrangler.md](/home/nilsmk/git/skillcollection/SKILLS_grib_netcdf_wrangler.md)): High-performance NetCDF/GRIB handling, Lustre storage locking workarounds, memory-safe hyperslabs, and grid coordinate rotations.
-- **`sailing-polar-telemetry`** ([SKILLS_sailing_polar_telemetry.md](/home/nilsmk/git/skillcollection/SKILLS_sailing_polar_telemetry.md)): ORC polar parsing, 2D SciPy polar interpolations, VMG, tacking loss metrics, and Dash-Plotly dashboard conventions.
-- **`klarsprak-norsk`** ([SKILLS_klarspraak_norsk.md](/home/nilsmk/git/skillcollection/SKILLS_klarspraak_norsk.md)): Norwegian plain language standards (*Språklova* § 9, ISO 24495-1).
-- **`clear-academic-english`** ([SKILLS_clear_academic_english.md](/home/nilsmk/git/skillcollection/SKILLS_clear_academic_english.md)): Academic writing standards, nominalization reduction, and scholarly clarity.
-- **`plain-english`** ([SKILLS_plain_english_broad_audience.md](/home/nilsmk/git/skillcollection/SKILLS_plain_english_broad_audience.md)): Broad audience readability and plain language.
+Curated domain skills and standardized methodologies are maintained in [nilsmkMET/skillcollection](https://github.com/nilsmkMET/skillcollection) (local clone: `~/git/skillcollection/`). Refer to and adopt these specifications for relevant tasks:
+- **`roms-ocean-eval`** ([SKILLS_roms_ocean_eval.md](~/git/skillcollection/SKILLS_roms_ocean_eval.md)): ROMS model verification, CPP options, non-linear tide-surge interaction diagnostics ($\zeta_{\text{int}}$), `utide` harmonic analysis, total tidal error vectors ($D_{\mathrm{total}}, D_4$), 1D circular phasors vs 2D current ellipses, and Inverse Barometer (IB) domain-scale under-response dynamics and blending.
+- **`kartverket-tide-api`** ([SKILLS_kartverket_tide_api.md](~/git/skillcollection/SKILLS_kartverket_tide_api.md)): Norwegian Mapping Authority water level and tide API client specifications, unit conversions (cm to m), multi-year timeseries ingestion, station availability, and caching.
+- **`scientific-latex-report`** ([SKILLS_scientific_latex_report.md](~/git/skillcollection/SKILLS_scientific_latex_report.md)): Standard scientific LaTeX templates, `booktabs` typography, 1-page executive summaries, AI transparency disclosures, margin-safe table layout, and two-pass non-interactive PDF build scripts.
+- **`agentic-coding-optimizer`** ([SKILLS_agentic_coding_optimizer.md](~/git/skillcollection/SKILLS_agentic_coding_optimizer.md)): Token budget management, context compaction strategies, caching optimization, and autonomous agent engineering workflows.
+- **`grib-netcdf-wrangler`** ([SKILLS_grib_netcdf_wrangler.md](~/git/skillcollection/SKILLS_grib_netcdf_wrangler.md)): High-performance NetCDF/GRIB handling, Lustre storage locking workarounds, memory-safe hyperslabs, and grid coordinate rotations.
+- **`sailing-polar-telemetry`** ([SKILLS_sailing_polar_telemetry.md](~/git/skillcollection/SKILLS_sailing_polar_telemetry.md)): ORC polar parsing, 2D SciPy polar interpolations, VMG, tacking loss metrics, and Dash-Plotly dashboard conventions.
+- **`klarsprak-norsk`** ([SKILLS_klarspraak_norsk.md](~/git/skillcollection/SKILLS_klarspraak_norsk.md)): Norwegian plain language standards (*Språklova* § 9, ISO 24495-1).
+- **`clear-academic-english`** ([SKILLS_clear_academic_english.md](~/git/skillcollection/SKILLS_clear_academic_english.md)): Academic writing standards, nominalization reduction, and scholarly clarity.
+- **`plain-english`** ([SKILLS_plain_english_broad_audience.md](~/git/skillcollection/SKILLS_plain_english_broad_audience.md)): Broad audience readability and plain language.
 
 ---
 

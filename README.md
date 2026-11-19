@@ -1,6 +1,6 @@
 # Agent Guidelines & Instruction Placement
 
-This repository contains the global engineering and AI agent operating instructions (`AGENTS.md`) for Nils M. K., as well as documentation on how and where to configure these guidelines so that AI agents (such as GitHub Copilot in VS Code) always load and apply them.
+This repository contains the global engineering and AI agent operating instructions (`AGENTS.md`), as well as documentation on how and where to configure these guidelines so that AI agents (such as GitHub Copilot in VS Code) always load and apply them.
 
 ---
 
@@ -10,7 +10,7 @@ How AI agents pick up guidelines depends on whether you work at the **workspace/
 
 ### 1. Global User Level in VS Code (Applies to *any* folder or repo)
 
-If you open individual sub-repositories directly (e.g. `code /home/nilsmk/git/hindcast_eval`), a file located at the parent directory or in another project folder will **not** automatically be loaded. To enforce these guidelines globally across all VS Code sessions regardless of opened directory:
+If you open individual sub-repositories directly (e.g. `code ~/git/hindcast_eval`), a file located at the parent directory or in another project folder will **not** automatically be loaded. To enforce these guidelines globally across all VS Code sessions regardless of opened directory:
 
 - **Target location**:
   ```text
@@ -19,7 +19,7 @@ If you open individual sub-repositories directly (e.g. `code /home/nilsmk/git/hi
 - **Setup via symlink** (recommended so you maintain a single source of truth):
   ```bash
   mkdir -p ~/.config/Code/User/prompts
-  ln -s /home/nilsmk/git/agent_guidelines/AGENTS.md ~/.config/Code/User/prompts/copilot-instructions.md
+  ln -s ~/git/agent_guidelines/AGENTS.md ~/.config/Code/User/prompts/copilot-instructions.md
   ```
 - **Setup via VS Code Settings**:
   In VS Code settings (`settings.json`):
@@ -27,7 +27,7 @@ If you open individual sub-repositories directly (e.g. `code /home/nilsmk/git/hi
   {
     "github.copilot.chat.codeGeneration.instructions": [
       {
-        "file": "/home/nilsmk/git/agent_guidelines/AGENTS.md"
+        "file": "~/git/agent_guidelines/AGENTS.md"
       }
     ]
   }
@@ -40,7 +40,7 @@ If you open individual sub-repositories directly (e.g. `code /home/nilsmk/git/hi
 When opening a specific repository or umbrella directory as the VS Code workspace:
 
 - **Root `AGENTS.md`**:
-  Copilot and standard agent frameworks recognize `AGENTS.md` located directly at the workspace root (e.g. `/home/nilsmk/git/AGENTS.md` when opening `/home/nilsmk/git`).
+  Copilot and standard agent frameworks recognize `AGENTS.md` located directly at the workspace root (e.g. `~/git/AGENTS.md` when opening `~/git`).
 - **Standard Copilot Workspace Instructions**:
   Within individual repositories, Copilot natively checks:
   ```text
